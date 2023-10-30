@@ -4,31 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09fc4396-212c-4636-91ce-bf413e4b2679" name="Changes" comment="Objetivo 2">
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/Obj2_Lista1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/controller/FuncionarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/Desenvolvedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/DesenvolvedorJunior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/DesenvolvedorPleno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/DesenvolvedorSenior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/GerenteDesenvolvimento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista1/src/model/GerenteGeral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista2/Obj2_Lista2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista2/src/controller/veiculoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista2/src/model/automovel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista2/src/model/bicicleta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista2/src/model/caminhao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista2/src/model/carro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista2/src/model/veiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista3/Obj2_Lista3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista3/src/controller/FuncionarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista3/src/model/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista3/src/model/Desenvolvedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista3/src/model/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista3/src/model/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obj2_Lista3/src/model/Investidor.java" afterDir="false" />
+    <list default="true" id="09fc4396-212c-4636-91ce-bf413e4b2679" name="Changes" comment="Objetivo 2 e Listas">
+      <change afterPath="$PROJECT_DIR$/Obj3_4/Obj3_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/controller/controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/exceptions/EstoqueInsuficienteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Fornecedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Fornecimento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Gerente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obj3_4/src/model/Vendedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -37,39 +24,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2X8dwmOpIaZHZmjzdaDljGIV9Io" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/pedro/IdeaProjects/LPOO/Obj2_Lista3/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/pedro/IdeaProjects/LPOO/Obj2_Lista3/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/IdeaProjects/LPOO/Obj2_Lista3/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/pedro/IdeaProjects/LPOO/objetivo3_avaliacao1/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pedro\IdeaProjects\LPOO\Obj2_Lista3\src" />
@@ -92,7 +86,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698014883861</updated>
-      <workItem from="1698014884971" duration="989000" />
+      <workItem from="1698014884971" duration="1042000" />
+      <workItem from="1698608131943" duration="2327000" />
+      <workItem from="1698624781237" duration="8095000" />
     </task>
     <task id="LOCAL-00001" summary="Objetivo 2">
       <option name="closed" value="true" />
@@ -102,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698015235072</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Objetivo 2">
+      <option name="closed" value="true" />
+      <created>1698015900036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698015900037</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +115,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Objetivo 2" />
     <option name="LAST_COMMIT_MESSAGE" value="Objetivo 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Obj3/objetivo3_avaliacao1/src/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
