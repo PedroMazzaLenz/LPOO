@@ -9,11 +9,9 @@ public class Vendedor extends Funcionario {
     }
 
     public void realizarPedido() {
-        // Não sei
     }
 
     public void consultarPreco() {
-        // Não sei
     }
 
     public String getLocal() {

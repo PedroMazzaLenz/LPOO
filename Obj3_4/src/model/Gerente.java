@@ -9,7 +9,6 @@ public class Gerente extends Funcionario {
     }
 
     public void autorizarCompra() {
-        // Não sei
     }
 
     public String getFormacao() {

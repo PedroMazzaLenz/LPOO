@@ -20,11 +20,7 @@ public abstract class Funcionario {
     }
 
     public boolean manterFunc(String matricula) {
-        if (this.matricula.equals(matricula)) {
-            return true;
-        } else {
-            return false;
-        }
+        return true;
     }
 
     public String getMatricula() {

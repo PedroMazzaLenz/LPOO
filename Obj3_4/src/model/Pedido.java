@@ -22,12 +22,10 @@ public class Pedido {
     }
 
     public boolean manterPedido(int numero) {
-        // Não sei
         return true;
     }
 
     public boolean manterItem(int codItem) {
-        // Não sei
         return true;
     }
 
