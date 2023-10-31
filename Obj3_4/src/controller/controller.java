@@ -3,92 +3,96 @@ package controller;
 import exceptions.EstoqueInsuficienteException;
 import model.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class controller {
-    private List<Pedido> pedidos = new ArrayList<>();
-    private List<Fornecimento> fornecimentos = new ArrayList<>();
+    public static void main(String[] args) {
+        List<Pedido> pedidos = new ArrayList<>();
+        List<Fornecimento> fornecimentos = new ArrayList<>();
 
-    public void realizarVenda(Vendedor vendedor, Produto produto, int quantidade) throws EstoqueInsuficienteException {
+        //Criando os vendedores, os produtos e o fornecedor
+        Vendedor vendedor1 = new Vendedor("1", "João", "Rua Dos Anjos", "Vencato", "12345-678", "Jaguarão", "RS", "Papelaria");
+        Vendedor vendedor2 = new Vendedor("2", "Maria", "Rua 23 de agosto", "Centro", "98765-432", "Pelotas", "RS", "SuperMercado");
+        Produto produto1 = new Produto(1, "Caderno", 100, 30.00);
+        Produto produto2 = new Produto(2, "Caneta", 200, 10.00);
+        Produto produto3 = new Produto(3, "Carro", 50, 50000.00);
+        Fornecedor fornecedor = new Fornecedor(345254321, "5199934233", "Antonia Cardozo");
 
-        if (produto.getQuantidade() < quantidade) {
-            throw new EstoqueInsuficienteException();
+        //Venda 1
+        try {
+            int quantidadeVenda1 = 10;
+            if (produto1.getQuantidade() < quantidadeVenda1) {
+                throw new EstoqueInsuficienteException();
+            }
+
+            Item item1 = new Item(1, 1.0, quantidadeVenda1, produto1);
+            Pedido pedido1 = new Pedido(2, new Date(), produto1.getPreco() * quantidadeVenda1, "Atendido", item1, vendedor1);
+            pedido1.getItens().add(item1);
+            pedidos.add(pedido1);
+            produto1.setQuantidade(produto1.getQuantidade() - quantidadeVenda1);
+        } catch (EstoqueInsuficienteException e) {
+            System.out.println("Erro: " + e.getMessage());
         }
 
-        Produto produto2 = new Produto(24, "Caderno", 100, 12.99);
-        Item item1 = new Item(1, 1.0, 10, produto2);
+        //Venda 2
+        try {
+            int quantidadeVenda2 = 5;
+            if (produto2.getQuantidade() < quantidadeVenda2) {
+                throw new EstoqueInsuficienteException();
+            }
+            Item item2 = new Item(2, 2.0, quantidadeVenda2, produto2);
+            Pedido pedido2 = new Pedido(3, new Date(), produto2.getPreco() * quantidadeVenda2, "Atendido", item2, vendedor2);
+            pedido2.getItens().add(item2);
+            pedidos.add(pedido2);
+            produto2.setQuantidade(produto2.getQuantidade() - quantidadeVenda2);
+        } catch (EstoqueInsuficienteException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
 
-        Pedido pedido1 = new Pedido(2, new Date(), 129.90, "Atendido", item1, vendedor);
-        pedido1.getItens().add(item1);
-
-        pedidos.add(pedido1);
-
-        produto.setQuantidade(produto.getQuantidade() - quantidade);
-
-
-    }
-
-
-    public void entradaEstoque(Fornecedor fornecedor, Produto produto, int quantidade) {
-        Fornecedor fornecedor2 = new Fornecedor(454097593, "53984075634", "Carlos Luiz");
-        Fornecimento fornecimento = new Fornecimento(new Date(), 999.90, fornecedor2, produto);
-
-        fornecimentos.add(fornecimento);
-
-        produto.setQuantidade(produto.getQuantidade() + quantidade);
-    }
-
-    public void imprimirRelatorioVendas() {
+        //Relatório de Vendas
         System.out.println("Relatório de Vendas:");
         for (Pedido pedido : pedidos) {
             System.out.println(pedido);
         }
-    }
 
-    public void imprimirRelatorioFornecimentos() {
-        System.out.println("Relatório de Fornecimentos:");
+        //Criandos o fornecimentos
+        int quantidadeFornecimento1 = 20;
+        double valortotalfornecimento1 = (produto1.getPreco() * quantidadeFornecimento1);
+        Fornecimento fornecimento1 = new Fornecimento(new Date(), valortotalfornecimento1, fornecedor, produto1);
+        fornecimentos.add(fornecimento1);
+        produto1.setQuantidade(produto1.getQuantidade() + quantidadeFornecimento1);
+
+        int quantidadeFornecimento2 = 15;
+        double valortotalfornecimento2 = (produto2.getPreco() * quantidadeFornecimento2);
+        Fornecimento fornecimento2 = new Fornecimento(new Date(), valortotalfornecimento2, fornecedor, produto2);
+        fornecimentos.add(fornecimento2);
+        produto2.setQuantidade(produto2.getQuantidade() + quantidadeFornecimento2);
+
+        //Relatório de Fornecimentos
+        System.out.println("\n\nRelatório de Fornecimentos:");
         for (Fornecimento fornecimento : fornecimentos) {
             System.out.println(fornecimento);
         }
-    }
 
 
-        public static void main(String[] args) throws EstoqueInsuficienteException {
+        //Objetivo 4
+        System.out.printf("\n\n Objetivo 4\n\n");
 
-        controller controller = new controller();
-        System.out.printf("");
-        Vendedor vendedor1 = new Vendedor("1", "João", "Rua Dos Anjos", "Vencato", "12345-678", "Jaguarão", "RS", "Papelaria");
-        Vendedor vendedor2 = new Vendedor("2", "Maria", "Rua 23 de agosto", "Centro", "98765-432", "Pelotas", "RS", "SuperMercado");
-        Produto produto1 = new Produto(1, "Caderno", 100, 12.99);
-        Produto produto2 = new Produto(2, "Caneta", 200, 19.99);
-        Fornecedor fornecedor = new Fornecedor(345254321, "5199934233", "Antonia Cardozo");
-
-        System.out.printf("\n");
-        controller.realizarVenda(vendedor1, produto1, 10);
-        controller.realizarVenda(vendedor2, produto2, 5);
-
-        System.out.printf("\n");
-        controller.imprimirRelatorioVendas();
-
-        System.out.printf("\n");
-        System.out.println("Estoque após vendas:");
-        System.out.println(produto1);
-        System.out.println(produto2);
-
-        controller.entradaEstoque(fornecedor, produto1, 20);
-        controller.entradaEstoque(fornecedor, produto2, 15);
-
-        System.out.printf("\n");
-        controller.imprimirRelatorioFornecimentos();
-
-        System.out.printf("\n");
-        System.out.printf("\n");
-
+        //Tentativa de venda sem estoque suficiente
         try {
-            controller.realizarVenda(vendedor1, produto1, 300);
+            int quantidadeVenda3 = 500;
+            if (produto3.getQuantidade() < quantidadeVenda3) {
+                throw new EstoqueInsuficienteException();
+            }
+            Item item3 = new Item(3, 0.0, quantidadeVenda3, produto3);
+            Pedido pedido3 = new Pedido(3, new Date(), produto2.getPreco() * quantidadeVenda3, "Atendido", item3, vendedor2);
+            pedido3.getItens().add(item3);
+            pedidos.add(pedido3);
+            produto3.setQuantidade(produto3.getQuantidade() - quantidadeVenda3);
         } catch (EstoqueInsuficienteException e) {
             System.out.println(e.getMessage());
-            return;
         }
     }
 }

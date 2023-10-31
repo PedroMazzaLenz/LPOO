@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09fc4396-212c-4636-91ce-bf413e4b2679" name="Changes" comment="Objetivo 3 e 4">
+    <list default="true" id="09fc4396-212c-4636-91ce-bf413e4b2679" name="Changes" comment="Objetivo 3 e 4.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obj3_4/src/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Obj3_4/src/controller/controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obj3_4/src/model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Obj3_4/src/model/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obj3_4/src/model/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Obj3_4/src/model/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obj3_4/src/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/Obj3_4/src/model/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obj3_4/src/model/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Obj3_4/src/model/Vendedor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +78,8 @@
       <workItem from="1698014884971" duration="1042000" />
       <workItem from="1698608131943" duration="2327000" />
       <workItem from="1698624781237" duration="8900000" />
-      <workItem from="1698689991117" duration="267000" />
+      <workItem from="1698689991117" duration="682000" />
+      <workItem from="1698776195750" duration="2595000" />
     </task>
     <task id="LOCAL-00001" summary="Objetivo 2">
       <option name="closed" value="true" />
@@ -108,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698637002732</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Objetivo 3 e 4.">
+      <option name="closed" value="true" />
+      <created>1698690579140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698690579140</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +122,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Objetivo 2" />
     <MESSAGE value="Objetivo 3 e 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Objetivo 3 e 4" />
+    <MESSAGE value="Objetivo 3 e 4." />
+    <option name="LAST_COMMIT_MESSAGE" value="Objetivo 3 e 4." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
