@@ -33,7 +33,7 @@ public class controller {
             pedidos.add(pedido1);
             produto1.setQuantidade(produto1.getQuantidade() - quantidadeVenda1);
         } catch (EstoqueInsuficienteException e) {
-            System.out.println("Erro: " + e.getMessage());
+            System.out.println(e.getMessage());
         }
 
         //Venda 2
@@ -48,7 +48,7 @@ public class controller {
             pedidos.add(pedido2);
             produto2.setQuantidade(produto2.getQuantidade() - quantidadeVenda2);
         } catch (EstoqueInsuficienteException e) {
-            System.out.println("Erro: " + e.getMessage());
+            System.out.println(e.getMessage());
         }
 
         //Relatório de Vendas
